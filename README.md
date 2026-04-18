@@ -79,7 +79,7 @@ decomprimer_fichier("document.yazid", "document_restored.txt")
 ```
 
 ---
-
+```
 ## Performance
 
 Test results on a 2KB text file (French prose):
@@ -95,7 +95,7 @@ Test results on a 2KB text file (French prose):
 
 ## Project Structure
 
-```
+
 HuffmanCompress/
 ├── main.py              # Core implementation
 ├── input.txt            # Source file
