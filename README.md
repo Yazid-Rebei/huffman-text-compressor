@@ -38,7 +38,7 @@ Input Text → Frequency Analysis → Huffman Tree → Code Generation → Bit P
 
 ## File Format (.yazid)
 
-```
+
 ┌────────────────────────────────────────────────────────────────┐
 │ Bytes          │ Content                                       │
 ├────────────────┼───────────────────────────────────────────────┤
