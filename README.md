@@ -38,7 +38,7 @@ Input Text → Frequency Analysis → Huffman Tree → Code Generation → Bit P
 
 ## File Format (.yazid)
 
-
+```
 ┌────────────────────────────────────────────────────────────────┐
 │ Bytes          │ Content                                       │
 ├────────────────┼───────────────────────────────────────────────┤
@@ -51,7 +51,9 @@ Input Text → Frequency Analysis → Huffman Tree → Code Generation → Bit P
 
 ---
 
-```
+## API Reference
+
+### `compresser_fichier(txt_path, bin_path)`
 
 Compresses a text file using Huffman coding.
 
@@ -60,6 +62,7 @@ Compresses a text file using Huffman coding.
 | `txt_path` | `str` | Path to input text file (UTF-8) |
 | `bin_path` | `str` | Path for compressed output |
 
+### `decomprimer_fichier(bin_path, txt_out_path)`
 
 Decompresses a `.yazid` file back to original text.
 
@@ -79,10 +82,10 @@ decomprimer_fichier("document.yazid", "document_restored.txt")
 ```
 
 ---
-```
+
 ## Performance
 
-Test results on a 2KB text file (French prose):
+Test results on a 2KB text file:
 
 | Metric | Value |
 |--------|-------|
@@ -95,7 +98,7 @@ Test results on a 2KB text file (French prose):
 
 ## Project Structure
 
-
+```
 HuffmanCompress/
 ├── main.py              # Core implementation
 ├── input.txt            # Source file
@@ -106,8 +109,8 @@ HuffmanCompress/
 
 ### Core Components
 
-| Module | Responsibility |
-|--------|----------------|
+| Function | Responsibility |
+|----------|----------------|
 | `calcule_frequence()` | Character frequency analysis |
 | `Noeud` | Binary tree node structure |
 | `construire_arbre()` | Huffman tree construction |
@@ -120,7 +123,7 @@ HuffmanCompress/
 ## Requirements
 
 - Python 3.6+
-- No external dependencies (uses only `json` and `os` from standard library)
+- No external dependencies (standard library only: `json`, `os`)
 
 ---
 
