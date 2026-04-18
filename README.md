@@ -51,12 +51,6 @@ Input Text → Frequency Analysis → Huffman Tree → Code Generation → Bit P
 
 ---
 
-## API Reference
-
-### Functions
-
-```python
-def compresser_fichier(txt_path: str, bin_path: str) -> None
 ```
 
 Compresses a text file using Huffman coding.
@@ -66,9 +60,6 @@ Compresses a text file using Huffman coding.
 | `txt_path` | `str` | Path to input text file (UTF-8) |
 | `bin_path` | `str` | Path for compressed output |
 
-```python
-def decomprimer_fichier(bin_path: str, txt_out_path: str) -> None
-```
 
 Decompresses a `.yazid` file back to original text.
 
