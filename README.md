@@ -19,7 +19,7 @@ HuffmanCompress implements the Huffman coding algorithm, an optimal prefix-free 
 
 ## Algorithm
 
-```
+
 Input Text → Frequency Analysis → Huffman Tree → Code Generation → Bit Packing → Compressed File
 ```
 
