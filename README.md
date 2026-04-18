@@ -23,15 +23,7 @@ HuffmanCompress implements the Huffman coding algorithm, an optimal prefix-free 
 Input Text → Frequency Analysis → Huffman Tree → Code Generation → Bit Packing → Compressed File
 ```
 
-### Complexity
 
-| Operation | Time | Space |
-|-----------|------|-------|
-| Frequency counting | O(n) | O(k) |
-| Tree construction | O(k log k) | O(k) |
-| Compression | O(n) | O(n) |
-| Decompression | O(n) | O(n) |
-```
 
 *where n = text length, k = number of distinct characters*
 
