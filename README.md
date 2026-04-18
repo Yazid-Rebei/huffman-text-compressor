@@ -31,13 +31,14 @@ Input Text → Frequency Analysis → Huffman Tree → Code Generation → Bit P
 | Tree construction | O(k log k) | O(k) |
 | Compression | O(n) | O(n) |
 | Decompression | O(n) | O(n) |
+```
 
 *where n = text length, k = number of distinct characters*
 
 ---
 
 ## File Format (.yazid)
-
+```
 
 ┌────────────────────────────────────────────────────────────────┐
 │ Bytes          │ Content                                       │
