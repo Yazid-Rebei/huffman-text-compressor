@@ -1,0 +1,38 @@
+Ce projet de compression a été réalisé par Mohamed Yazid Rebei (ICE 3)
+dans le cadre de la révision du cours de Multimédia.
+
+
+Le codage de Huffman est un algorithme de compression de données sans perte. 
+Cet algorithme a été développé par David A. Huffman pendant qu'il était étudiant au MIT en 1952. 
+Le principe est simple : on attribue des codes plus courts aux caractères les plus fréquents, 
+et des codes plus longs aux caractères les moins fréquents. 
+
+Pour construire un arbre de Huffman, on commence par compter la fréquence de chaque caractère 
+dans le message à compresser. Ensuite, on crée une forêt d'arbres où chaque nœud feuille 
+représente un caractère avec son poids (sa fréquence). On prend ensuite les deux arbres 
+de poids les plus faibles et on les fusionne en créant un nouveau nœud parent dont le poids 
+est la somme des deux poids. On répète cette opération jusqu'à obtenir un seul arbre.
+
+La compression Huffman est largement utilisée dans de nombreux formats de fichiers : 
+PNG, JPEG, MP3, ZIP, GZIP, etc. C'est un algorithme fondamental en compression de données 
+car il atteint la limite théorique de compression pour un encodage par symbole, 
+c'est-à-dire l'entropie de Shannon.
+
+Voici un exemple de codage pour un texte simple : 
+Le mot "bonjour" avec les fréquences : b:1, o:2, n:1, j:1, u:1, r:1. 
+Le 'o' étant le plus fréquent, il aura le code le plus court, comme '0'. 
+Les autres lettres auront des codes plus longs comme '10', '110', '1110', etc.
+
+Pour décoder un message compressé, on parcourt l'arbre de Huffman à partir de la racine. 
+Chaque bit 0 indique d'aller à gauche, chaque bit 1 indique d'aller à droite. 
+Lorsqu'on atteint une feuille, on écrit le caractère correspondant et on retourne à la racine.
+
+La compression Huffman peut réduire la taille d'un fichier texte de 40 à 60% en moyenne. 
+Cependant, il faut ajouter l'arbre de Huffman (ou la table des codes) au fichier compressé 
+pour permettre le décodage. Pour les petits fichiers, l'arbre peut représenter un surcoût 
+important, ce qui rend la compression moins efficace.
+
+Ce projet de compression a été réalisé par Mohamed Yazid Rebei (ICE 3)
+dans le cadre de la révision du cours de Multimédia.
+
+Merci d'avoir visité cette page !
